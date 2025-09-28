@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WeatherFlow</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="main">
+    <div class="hero">
+      <h1 class="title">Weather Teller</h1>
+    </div>
+
+    <div class="search-card">
+      <div class="input-group">
+        <input id="locationInput" type="text" placeholder="Enter city name" class="search-input" />
+        <button onclick="getWeather()" class="search-btn">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.35-4.35"></path>
+          </svg>
+        </button>
+        <div class="loader" id="loadingSpinner"><div class="spinner"></div></div>
+      </div>
+    </div>
+
+    <div id="weatherResult" class="result"></div>
+  </main>
+
+  <div id="weatherEffect"></div>
+  <script src="config.js"></script> 
+  <script src="script.js"></script>
+</body>
+</html>
